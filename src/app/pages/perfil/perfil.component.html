@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>Mi Perfil</mat-card-title>
+    <hr>
+    <img mat-card-image [src]="imagenData" *ngIf="imagenEstado" width="50%" height="50%"/>
+    <br>
+    <h2>Usuario: {{ nombreUsuario }}</h2>
+    <br>
+    <h2>Roles: </h2>
+    <mat-list role="list" *ngFor="let rol of roles">
+        <mat-list-item>{{rol}}</mat-list-item>
+    </mat-list>
+</mat-card>
